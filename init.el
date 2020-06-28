@@ -16,6 +16,7 @@
 ;; 4-space indents
 (setq c-basic-offset 4)
 (setq sgml-basic-offset 4)
+(setq lua-indent-level 4)
 
 ;; Green comments
 (set-face-foreground 'font-lock-comment-face "green")
