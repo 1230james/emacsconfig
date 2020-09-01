@@ -17,6 +17,7 @@
 (setq c-basic-offset 4)
 (setq sgml-basic-offset 4)
 (setq lua-indent-level 4)
+(setq lisp-indent-offset 4)
 
 ;; Backtab
 (global-set-key (kbd "<backtab>") 'un-indent-by-removing-4-spaces)
@@ -50,9 +51,9 @@
 (add-hook 'c-initialization-hook 'my-cc-init-hook)
 
 ;; Add Lua mode
-(require 'lua-mode)
+;; (require 'lua-mode) ;; Disabled because it breaks in Emacs 27 and I honestly have 0 clue why
 
-;; Column indicator
+;; Column indicator - adjust column number in ./lisp/fill-column-indicator.el on line 184
 (require 'fill-column-indicator)
 (define-globalized-minor-mode fci-mode-global fci-mode
   (lambda () (fci-mode 1)))
