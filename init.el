@@ -51,7 +51,7 @@
 (add-hook 'c-initialization-hook 'my-cc-init-hook)
 
 ;; Add Lua mode
-;; (require 'lua-mode) ;; Disabled because it breaks in Emacs 27 and I honestly have 0 clue why
+(require 'lua-mode) ;; Disabled because it breaks in Emacs 27 and I honestly have 0 clue why
 
 ;; Column indicator - adjust column number in ./lisp/fill-column-indicator.el on line 184
 (require 'fill-column-indicator)
